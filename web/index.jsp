@@ -9,10 +9,7 @@
 <html>
     <head>
         <script type="text/javascript">
-            function redirecionar(){
-                 window.location="Login.jsp";
-             }
-         </script>
+        </script>
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Aplicação tipo Net</title>

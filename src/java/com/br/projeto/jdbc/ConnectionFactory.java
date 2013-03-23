@@ -17,7 +17,7 @@ public class ConnectionFactory {
     public static Connection getConnection() {
         try {
             return DriverManager.getConnection(
-                    "jdbc:mysql://localhost/projeto", "root", "hipodromo");
+                    "jdbc:mysql://db4free.net:3306/poodb", "userpoo", "12345678");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
