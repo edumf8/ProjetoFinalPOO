@@ -37,28 +37,28 @@ public class FilmeDAO {
         }
     }
 
-    public List<Filme> select() {
-        List<Filme> listaFilme = new ArrayList<Filme>();
-        try {
-            
-            Connection con = ConnectionFactory.getConnection();
-            String query = "Select * from tb_filmes ";
-            PreparedStatement stmt = con.prepareStatement(query);
-            ResultSet rs = stmt.executeQuery();
-            
-            while (rs.next()) {
-                Filme filme = new Filme();
-                filme.setNomeFilme(rs.getString("vc_NomeFilmes"));
-                filme.setCategoriaFilme(rs.getString("vc_CategoriaFilme"));
-                listaFilme.add(filme);
-            }
-            con.close();
-            stmt.close();
-            rs.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        
-        return listaFilme;
-    }
+//    public List<Filme> select() {
+//        List<Filme> listaFilme = new ArrayList<Filme>();
+//        try {
+//            
+//            Connection con = ConnectionFactory.getConnection();
+//            String query = "Select * from tb_filmes ";
+//            PreparedStatement stmt = con.prepareStatement(query);
+//            ResultSet rs = stmt.executeQuery();
+//            
+//            while (rs.next()) {
+//                Filme filme = new Filme();
+//                filme.setNomeFilme(rs.getString("vc_NomeFilmes"));
+//                filme.setCategoriaFilme(rs.getString("vc_CategoriaFilme"));
+//                listaFilme.add(filme);
+//            }
+//            con.close();
+//            stmt.close();
+//            rs.close();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//        
+//        return listaFilme;
+//    }
 }
