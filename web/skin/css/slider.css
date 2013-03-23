@@ -1,0 +1,15 @@
+.slider {
+    position: relative;
+}
+.slider > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.slider .slider-caption {
+    top: initial;
+    z-index: 1;
+    bottom: 0;
+}

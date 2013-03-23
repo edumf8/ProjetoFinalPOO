@@ -4,14 +4,10 @@
  */
 package com.br.projeto.dao;
 
-import com.br.projeto.bean.Filme;
 import com.br.projeto.jdbc.ConnectionFactory;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
 
 
 /**
