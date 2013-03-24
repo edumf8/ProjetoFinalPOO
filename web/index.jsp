@@ -8,13 +8,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script type="text/javascript">
-        </script>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="skin/js/jquery-1.9.1.min.js"></script>
+        <script src="skin/fancybox/jquery.fancybox.pack.js"></script>
+        <script src="skin/js/jquery-slider.js"></script>
+        <script src="skin/js/main.js"></script>
+        <script src="skin/js/index.js"></script>
+
+        <link rel="stylesheet" href="skin/fancybox/jquery.fancybox.css"/>
+        <link rel="stylesheet" href="skin/css/slider.css"/>
+        <link rel="stylesheet" href="skin/css/style.css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Aplicação tipo Net</title>
     </head>
     <body>
+        <div class="header">
+            Tinami
+        </div>        
+        <div class="slider-home"> 
+            <img src="skin/img/slider_home/game-of-thrones.png" alt="Game of Thrones é muito louco, mano!" />
+            <img src="skin/img/slider_home/iron-man.png" alt="Game of Thrones é muito louco, mano!" />
+            <img src="skin/img/slider_home/shrek.jpg" alt="Game of Thrones é muito louco, mano!" />
+        </div>
+        
+        <div class="acoes-home">
+            <button class="button-login">Login</button>
+            <form>
+                <span></span>
+                <input type="text" name="nome" placeholder="Nome"/>
+                <input type="text" name="email" placeholder="E-mail"/>
+                <input type="password" name="senha" placeholder="Senha"/>
+            </form>
+        </div>
+        
         <form >
             <div class="pagina">
                 <div class="logo">
@@ -66,8 +91,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="informacoes">
             </div>
         </form>
     </body>
