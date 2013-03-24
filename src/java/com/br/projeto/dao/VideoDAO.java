@@ -12,5 +12,6 @@ import com.br.projeto.bean.Genero;
  */
 public interface VideoDAO {
     
+    
     public void buscarVideosPorGenero(Genero genero);
 }

@@ -27,5 +27,11 @@
                 //$('#featured').slider();
             });
         </script>
+        
+        <%
+            for(Video video : videos) {
+        %>
+        <img src="<%=video.getUrlImagem()%>"/>
+        <%}%>
     </body>
 </html>
