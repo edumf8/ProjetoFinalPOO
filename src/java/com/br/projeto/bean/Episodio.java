@@ -12,6 +12,6 @@ import java.util.Date;
  */
 public class Episodio {
     private int id;
-    private int idPrograma;
+    private Programa programa;
     private Date dataExibicao;
    }

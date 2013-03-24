@@ -4,14 +4,12 @@
  */
 package com.br.projeto.bean;
 
-import java.util.List;
-
 /**
  *
  * @author Neusa
  */
-public class Programa {
+public class Visualizacao {
     private int id;
-    private String nome;
-    private List<Episodio> episodios;
-    }
+    private Usuario usuario;
+    private Video video;
+}

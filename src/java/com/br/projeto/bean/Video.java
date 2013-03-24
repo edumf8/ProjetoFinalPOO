@@ -5,6 +5,7 @@
 package com.br.projeto.bean;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  *
@@ -13,13 +14,14 @@ import java.util.Date;
 public class Video {
     private int id;
     private String titulo;
-    private int idGenero;
+    private Genero genero;
     private int classificacao;
-    private Date dataCadastro; //Qual o tipo da variável?
-    private int avaliacao;
+    private Date dataCadastro;
     private int qtdVisualizacoes;
     private String urlVideo;
     private String urlImagem;
     private String descricao;
+    
+    private List<Avaliacao> avaliacoes;
     //private String tipo; Não se sabe se irá ser usada 
 }

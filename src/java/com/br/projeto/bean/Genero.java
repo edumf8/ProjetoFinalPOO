@@ -11,6 +11,11 @@ import java.util.Date;
  * @author Neusa
  */
 public class Genero {
+    
+    public static final int TV=1;
+  
+    public static final int FILME =2;
+    
     private int id;
     private String nome;
     private int tipo;

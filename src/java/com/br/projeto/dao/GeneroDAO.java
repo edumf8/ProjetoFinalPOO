@@ -4,14 +4,12 @@
  */
 package com.br.projeto.dao;
 
-import com.br.projeto.bean.Video;
+import com.br.projeto.bean.Genero;
 
 /**
  *
  * @author Neusa
  */
-public interface FilmeDAO {
-   
-    public void inserirFilme(Video video,String urlTrailer );
- 
+public interface GeneroDAO {
+    public void inserirGenero(String nome, int tipo);
 }

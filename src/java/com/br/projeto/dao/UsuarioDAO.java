@@ -4,14 +4,14 @@
  */
 package com.br.projeto.dao;
 
-import com.br.projeto.bean.Video;
+import java.util.Date;
 
 /**
  *
  * @author Neusa
  */
-public interface FilmeDAO {
-   
-    public void inserirFilme(Video video,String urlTrailer );
- 
+public interface UsuarioDAO {
+    
+    public void inserirUsuario(String nome, String email, String senha, Date dataCadastro);
+    
 }

@@ -11,5 +11,6 @@ package com.br.projeto.bean;
  */
 public class Filme {
    private int id;
+   private Video video;
     private String urlTrailer;
 }

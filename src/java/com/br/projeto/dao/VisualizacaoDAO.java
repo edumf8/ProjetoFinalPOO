@@ -4,14 +4,10 @@
  */
 package com.br.projeto.dao;
 
-import com.br.projeto.bean.Video;
-
 /**
  *
  * @author Neusa
  */
-public interface FilmeDAO {
-   
-    public void inserirFilme(Video video,String urlTrailer );
- 
+public interface VisualizacaoDAO {
+    
 }
