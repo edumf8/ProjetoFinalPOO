@@ -12,7 +12,6 @@ import java.util.List;
  * @author Neusa
  */
 public interface GeneroDAO {
-    public void inserirGenero(String nome, int tipo);
     
-    public List<Genero> buscarGenerosPorTipo(int tipo);
+    public Genero getGenero(int idGenero);
 }

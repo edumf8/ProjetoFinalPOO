@@ -12,7 +12,13 @@
     <h:body>
         <ui:composition template="./template.xhtml">
             <ui:define name="content">
-                Meu contúdo customizado
+                <ul>
+                    <c:forEach items="#{videoFacade.listarVideosPorGenero(1)}" var="video">
+                        <li>
+                            <iframe width="640" height="360" src="#{video.urlVideo}" frameborder="0" allowfullscreen="true"></iframe>
+                        </li>
+                    </c:forEach>
+                </ul>
             </ui:define>
         </ui:composition>
     </h:body>
