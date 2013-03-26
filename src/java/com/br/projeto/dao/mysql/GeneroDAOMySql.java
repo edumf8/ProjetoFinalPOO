@@ -28,7 +28,7 @@ public class GeneroDAOMySql implements GeneroDAO {
     public Genero getGenero(int idGenero) {
         try {
             PreparedStatement stmt = connection.prepareStatement("select * from genero where id = ?");
-            stmt.setInt(0, idGenero);
+            stmt.setInt(1, idGenero);
             ResultSet rs = stmt.executeQuery();
             if (rs.first()) {
                 Genero genero = new Genero();
