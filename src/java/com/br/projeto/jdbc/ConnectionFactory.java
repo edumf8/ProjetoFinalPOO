@@ -14,6 +14,14 @@ import java.sql.SQLException;
  */
 public class ConnectionFactory {
 
+    static {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException ex) {
+            ex.printStackTrace();
+        }
+    }
+    
     public static Connection getConnection() {
         try {
             return DriverManager.getConnection(

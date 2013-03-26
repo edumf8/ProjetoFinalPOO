@@ -5,6 +5,8 @@
 package com.br.projeto.dao;
 
 import com.br.projeto.bean.Genero;
+import com.br.projeto.bean.Video;
+import java.util.ArrayList;
 
 /**
  *
@@ -13,5 +15,5 @@ import com.br.projeto.bean.Genero;
 public interface VideoDAO {
     
     
-    public void buscarVideosPorGenero(Genero genero);
+    public ArrayList<Video> buscarVideosPorGenero(Genero genero);
 }

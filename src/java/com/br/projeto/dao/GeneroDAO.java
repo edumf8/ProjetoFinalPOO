@@ -5,6 +5,7 @@
 package com.br.projeto.dao;
 
 import com.br.projeto.bean.Genero;
+import java.util.List;
 
 /**
  *
@@ -12,4 +13,6 @@ import com.br.projeto.bean.Genero;
  */
 public interface GeneroDAO {
     public void inserirGenero(String nome, int tipo);
+    
+    public List<Genero> buscarGenerosPorTipo(int tipo);
 }
