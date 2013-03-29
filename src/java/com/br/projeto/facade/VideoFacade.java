@@ -36,4 +36,8 @@ public class VideoFacade {
         }
         return videoDAO.buscarVideosPorGenero(genero);
     }
+    
+    public List<Video> getUltimosLancamentos() {
+        return videoDAO.buscarUltimosVideos(20);
+    }
 }

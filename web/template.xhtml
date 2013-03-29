@@ -21,20 +21,13 @@
                         <li><h:link outcome="/index.xhtml" value="Tv"/></li>
                     </ul>
                     <h:form styleClass="form-pesquisa">
-                        <h:inputText></h:inputText>
-                        <h:commandButton>
-                            <f:ajax></f:ajax>
-                        </h:commandButton>
+                        <h:inputText value="#{pesquisaVideoFacade.textoPesquisa}"></h:inputText>
+                        <h:commandButton action="pesquisa"/>
                     </h:form>
                 </ui:insert>
             </div>
             <div class="content">
                 <ui:insert name="content"></ui:insert>
-            </div>
-            <div class="footer">
-                <ui:insert name="footer">
-                    Footer
-                </ui:insert>
             </div>
         </div>
     </h:body>
