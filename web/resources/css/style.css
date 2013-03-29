@@ -44,9 +44,39 @@ div.inline{
    position:relative;
 }
 .header {
-   background:#ff0;
-   height: 50px;
+   background:#606;
+   height: 70px;
 }
+.header > * {
+    height: 70px;
+}
+.header .logo {
+    float: left;
+}
+.header .menu {
+    width: 330px;
+    margin: 0 auto;
+    position: relative;
+}
+.header .menu li {
+    float: left;
+    width: 110px;
+}
+.header .menu li:hover {
+    background-color: #808;
+}
+.header .menu li a, 
+.header .menu li a:visited, 
+.header .menu li a:link, 
+.header .menu li a:active {
+    display: block;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 0px;
+}
+
 .content{
    padding-bottom:50px;   /* Height of the footer */
 }
