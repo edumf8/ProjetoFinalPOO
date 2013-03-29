@@ -5,9 +5,9 @@
 
 html,
 body {
-   margin:0;
-   padding:0;
-   height:100%;
+    margin:0;
+    padding:0;
+    height:100%;
 }
 body {
     background-color: #EBEBEB;
@@ -40,12 +40,12 @@ div.inline{
 
 
 .container {
-   min-height:100%;
-   position:relative;
+    min-height:100%;
+    position:relative;
 }
 .header {
-   background:#606;
-   height: 70px;
+    background:#606;
+    height: 70px;
 }
 .header > * {
     height: 70px;
@@ -76,14 +76,18 @@ div.inline{
     font-size: 25px;
     padding: 20px 0px;
 }
+.header .form-pesquisa {
+    float: right;
+    margin-top: -70px;
+}
 
 .content{
-   padding-bottom:50px;   /* Height of the footer */
+    padding-bottom:50px;   /* Height of the footer */
 }
 .footer {
-   position:absolute;
-   bottom:0;
-   width:100%;
-   height:50px;   /* Height of the footer */
-   background:#6cf;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:50px;   /* Height of the footer */
+    background:#6cf;
 }
