@@ -110,12 +110,19 @@ div.inline{
 .content{
     padding-bottom:50px;   /* Height of the footer */
 }
+.content h1 {
+    font-size: 30px;
+    color: #fff;
+}
 .content .lista-ultimos-lancamentos li {
     float: left;
     margin: 5px;
 }
 .content .lista-ultimos-lancamentos img {
     height: 200px;
+}
+.content .slider-home {
+    margin: 0 auto;
 }
 .content .slider-home, .content .slider-home img {
     width: 800px;

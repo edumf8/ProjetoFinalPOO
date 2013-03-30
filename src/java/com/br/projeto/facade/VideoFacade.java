@@ -38,6 +38,6 @@ public class VideoFacade {
     }
     
     public List<Video> getUltimosLancamentos() {
-        return videoDAO.buscarUltimosVideos(20);
+        return videoDAO.buscarUltimosVideos(6);
     }
 }
