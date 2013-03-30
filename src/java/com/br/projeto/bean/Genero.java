@@ -4,16 +4,15 @@
  */
 package com.br.projeto.bean;
 
-import java.util.Date;
-
 /**
- *
+ * A classe Genero representa os tipos de filmes e epsódios.
+ * Para filmes há gêneros como: ação, comédia, terro, romance.
+ * Para tv há gêneros como: novela, esportes, seriados, auditório
  * @author Neusa
  */
 public class Genero {
     
     public static final int TV=1;
-  
     public static final int FILME =2;
     
     private int id;

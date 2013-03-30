@@ -5,11 +5,12 @@
 package com.br.projeto.bean;
 
 import java.util.Date;
-import java.util.List;
 
 /**
  *
- * @author Neusa
+ * A classe Video é responsável por guardar informações básicas de vídeos, como
+ * por exemplo: título, gênero e descrição. Filme e Episodio herdam de Video
+ * e representam vídeos de filmes e tv, respectivamente.
  */
 public class Video {
     private int id;
@@ -22,9 +23,6 @@ public class Video {
     private String urlImagem;
     private String descricao;
     
-    private List<Avaliacao> avaliacoes;
-
-    //private String tipo; Não se sabe se irá ser usada
     public int getId() {
         return id;
     }
@@ -96,15 +94,5 @@ public class Video {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-
-    public List<Avaliacao> getAvaliacoes() {
-        return avaliacoes;
-    }
-
-    public void setAvaliacoes(List<Avaliacao> avaliacoes) {
-        this.avaliacoes = avaliacoes;
-    }
-
-    
 }
 

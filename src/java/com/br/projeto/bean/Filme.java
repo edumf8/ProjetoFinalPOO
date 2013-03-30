@@ -1,16 +1,19 @@
 package com.br.projeto.bean;
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
- * @author c31433
+ * Tipo especial de Video que representa um filme.
+ * A única característica que o diferencia é ter um trailer.
+ * @author Neusa
  */
-public class Filme {
-   private int id;
-   private Video video;
+public class Filme extends Video {
+
     private String urlTrailer;
+
+    public String getUrlTrailer() {
+        return urlTrailer;
+    }
+
+    public void setUrlTrailer(String urlTrailer) {
+        this.urlTrailer = urlTrailer;
+    }
 }

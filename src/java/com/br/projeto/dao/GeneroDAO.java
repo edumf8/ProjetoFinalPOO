@@ -5,10 +5,9 @@
 package com.br.projeto.dao;
 
 import com.br.projeto.bean.Genero;
-import java.util.List;
 
 /**
- *
+ * Interface de acesso a fonte de dados da classe Genero
  * @author Neusa
  */
 public interface GeneroDAO {
