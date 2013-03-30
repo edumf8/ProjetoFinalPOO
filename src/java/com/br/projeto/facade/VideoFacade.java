@@ -40,4 +40,8 @@ public class VideoFacade {
     public List<Video> getUltimosLancamentos() {
         return videoDAO.buscarUltimosVideos(6);
     }
+    
+    public Video getVideo(int id) {
+        return videoDAO.get(id);
+    }
 }

@@ -91,4 +91,28 @@ public class VideoDAOMySql implements VideoDAO {
         }
         return null;
     }
+
+    @Override
+    public Video get(int id) {
+        String sql = "select * from video where id = ?";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(sql);
+            stmt.setInt(0, id);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.first()) {
+                Video video = new Video();
+                video.setDescricao(rs.getString("descricao"));
+                video.setQtdVisualizacoes(rs.getInt("qtd_visualizacoes"));
+                video.setClassificacao(rs.getInt("classificacao"));
+                video.setDataCadastro(rs.getDate("data_cadastro"));
+                video.setId(rs.getInt("id"));
+                video.setTitulo(rs.getString("titulo"));
+                video.setUrlImagem(rs.getString("url_imagem"));
+                video.setUrlVideo(rs.getString("url_video"));
+                return video;
+            }
+        } catch (SQLException ex) {
+        }
+        return null;
+    }
 }

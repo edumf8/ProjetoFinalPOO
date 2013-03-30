@@ -22,6 +22,7 @@ public class PesquisaVideoFacade {
     
     private VideoDAO videoDAO;
     private String textoPesquisa;
+    private Video video;
 
     public PesquisaVideoFacade() {
         videoDAO = new VideoDAOMySql();
@@ -39,5 +40,12 @@ public class PesquisaVideoFacade {
         System.out.println(textoPesquisa);
         List<Video> videos = new ArrayList<Video>();
         return videos;
+    }
+    
+    public Video getVideo(int id) {
+        if (video == null) {
+            video = videoDAO.get(id);
+        }
+        return video;
     }
 }
