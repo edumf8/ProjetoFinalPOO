@@ -6,17 +6,16 @@
                 xmlns:c="http://java.sun.com/jsp/jstl/core"
                 xmlns:fn="http://java.sun.com/jsp/jstl/functions">
     <ui:define name="content">
+        <c:set var="video" value="#{pesquisaVideoFacade.getVideo(param['id_video'])}" />
         <div class="descricao-video">
-            <h:outputText value="${param['id_video']}" />
-            <img src="#{pesquisaVideoFacade.video(param['id_video']).urlImagem}"/>
-            <h3>Sinopse</h3>
-            
+            <img src="#{video.urlImagem}"/>
+            <h1>Sinopse</h1>
             <div class="sinopse">
-                <h:outputText value="#{pesquisaVideoFacade.video(param['id_video']).descricao}"/>
+                <h:outputText value="#{pesquisaVideoFacade.getVideo(param['id_video']).descricao}"/>
             </div>
         </div>
         <div class="visualizacao-video">
-            
+            <iframe width="640" height="390" src="#{pesquisaVideoFacade.getVideo(param['id_video']).urlVideo}" frameborder="0" allowfullscreen="true"></iframe>
         </div> 
     </ui:define>
 </ui:composition> 

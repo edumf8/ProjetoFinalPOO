@@ -43,9 +43,14 @@ public class PesquisaVideoFacade {
     }
     
     public Video getVideo(int id) {
+        System.out.println(id);
         if (video == null) {
+            System.out.println("null");
             video = videoDAO.get(id);
         }
+        if (video != null) {System.out.println(video.getDescricao());}
+        
+        
         return video;
     }
 }

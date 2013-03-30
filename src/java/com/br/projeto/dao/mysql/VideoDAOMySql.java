@@ -94,10 +94,9 @@ public class VideoDAOMySql implements VideoDAO {
 
     @Override
     public Video get(int id) {
-        String sql = "select * from video where id = ?";
+        String sql = "select * from video where id = " + id;
         try {
             PreparedStatement stmt = connection.prepareStatement(sql);
-            stmt.setInt(0, id);
             ResultSet rs = stmt.executeQuery();
             if (rs.first()) {
                 Video video = new Video();

@@ -22,7 +22,7 @@
         <ul class="lista-ultimos-lancamentos">
             <c:forEach items="#{videoFacade.ultimosLancamentos}" var="video">
                 <li>
-                    <h:outputLink value="video.xhtml?id_video=#{video.id}">
+                    <h:outputLink  value="faces/video.xhtml?id_video=#{video.id}">
                         <img src="#{video.urlImagem}"/>
                     </h:outputLink>
                 </li>

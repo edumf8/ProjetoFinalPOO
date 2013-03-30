@@ -1,6 +1,7 @@
 * {
     font-size: 18px;
     font-family: Helvetica, Verdana, sans-serif;
+    color: #fff;
 }
 
 html,
@@ -127,6 +128,19 @@ div.inline{
 .content .slider-home, .content .slider-home img {
     width: 800px;
     height: 600px;
+}
+.content .descricao-video {
+    min-height: 300px;
+    margin-bottom: 60px;
+}
+.content .descricao-video img{
+    height: 300px;
+    float: left;
+    margin-left: 40px;
+}
+.content .visualizacao-video {
+    width: 640px;
+    margin: 0 auto;
 }
 
 .footer {
