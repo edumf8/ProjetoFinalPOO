@@ -6,28 +6,12 @@
                 xmlns:c="http://java.sun.com/jsp/jstl/core"
                 xmlns:fn="http://java.sun.com/jsp/jstl/functions">
     <ui:define name="content">
-        <h:outputScript target="body" library="slidesjs" name="jquery.slides.min.js"/>
-        <h:outputScript target="body" library="js" name="index.js"/>
-        <div class="slider-home hidden">
-            <img src="http://www.papeldeparede.etc.br/fotos/wp-content/uploads/Iron-Man-I-II_06.jpg"/>
-            <img src="http://images2.fanpop.com/images/photos/4000000/Ironman-iron-man-4030720-1280-882.jpg"/>
-            <img src="http://www.papeldeparede.etc.br/fotos/wp-content/uploads/Iron-Man-I-II_06.jpg"/>
-            <img src="http://images2.fanpop.com/images/photos/4000000/Ironman-iron-man-4030720-1280-882.jpg"/>
-            <img src="http://www.papeldeparede.etc.br/fotos/wp-content/uploads/Iron-Man-I-II_06.jpg"/>
-            <img src="http://images2.fanpop.com/images/photos/4000000/Ironman-iron-man-4030720-1280-882.jpg"/>
-            <img src="http://www.papeldeparede.etc.br/fotos/wp-content/uploads/Iron-Man-I-II_06.jpg"/>
-            <img src="http://images2.fanpop.com/images/photos/4000000/Ironman-iron-man-4030720-1280-882.jpg"/>
+        <c:set var="video" value="#{videoFacade.video(param['id_video'])}"/>
+        <div class="descricao-video">
+            <img src="${video.urlImagem}"
         </div>
-        <h1>Últimos Lançamentos</h1>
-        <ul class="lista-ultimos-lancamentos">
-            <c:forEach items="#{videoFacade.ultimosLancamentos}" var="video">
-                <li>
-                    <h:outputLink value="video.xhtml?id_video=#{video.id}">
-                        <img src="#{video.urlImagem}"/>
-                    </h:outputLink>
-                </li>
-            </c:forEach>
-            <div class="clear"></div>
-        </ul>
+        <div class="visualizacao-video">
+            
+        </div> 
     </ui:define>
 </ui:composition>
